@@ -1,0 +1,30 @@
+.app{
+  text-align: center;
+ }
+ 
+ .accordian-container{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+ }
+ 
+ .accordian{
+     border: 2px solid lightcoral;
+     margin: 20px;
+     
+ }
+ 
+ .title{
+     font-weight: bold;
+     padding: 5px;
+     border: 2px solid lightcoral;
+     border-radius: 5px;
+     cursor: pointer;
+     margin: 5px;
+ }
+ 
+ .content{
+     margin: 5px;
+ }
+ 
+ 
