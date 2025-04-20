@@ -1,12 +1,12 @@
-# React + Vite
+This is a small feature intoduced for pet owner's life, to keet track on day-to-day lives priority task. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Setting priority between low, medium and high along with color coded for busy owners to not read the whole task until it is of atmost urgency and set as high-pririty.
 
-Currently, two official plugins are available:
+This feature is a small prototype and could be evolved into much advance and helpful manner.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Using a input field to give owner the access to give their own task and many more.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tech Stack:
+React
+React hooks
+Vite
