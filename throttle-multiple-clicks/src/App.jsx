@@ -1,22 +1,19 @@
 import "./App.css";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import useThrottle from "./Hooks/useThrottle";
 
 function App() {
   const [normalCount, setNormalCount] = useState(0);
   const [throttleCount, setThrottleCount] = useState(0);
-  const throttleFun = useRef(null);
 
-  if (!throttleFun.current) {
-    throttleFun.current = useThrottle((message) => {
-      setThrottleCount((c) => c + 1);
-      console.log(message);
-    }, 5000);
-  }
+  const ThrottleFn = useThrottle((value) => {
+    setThrottleCount((c) => c + 1);
+    console.log(value);
+  }, 5000);
 
   const handleButton = () => {
     setNormalCount((c) => c + 1);
-    throttleFun.current("Throttled value");
+    ThrottleFn("throttled");
   };
 
   return (

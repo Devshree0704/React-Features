@@ -1,11 +1,13 @@
+import { useRef } from "react";
+
 const useThrottle = (func, delay) => {
-  let throttleId = null;
+  const throttleId = useRef(null);
 
   return (...args) => {
-    if (!throttleId) {
+    if (!throttleId.current) {
       func(...args);
-      throttleId = setTimeout(() => {
-        throttleId = null;
+      throttleId.current = setTimeout(() => {
+        throttleId.current = null;
       }, delay);
     }
   };
