@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab-container {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 100px 200px;
+  margin-bottom: 20px;
+}
