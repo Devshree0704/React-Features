@@ -1,0 +1,14 @@
+.star-container {
+  display: flex;
+  gap: 5px;
+}
+
+.star-item {
+  width: 70px;
+  height: 70px;
+  border: 2px solid black;
+}
+
+.star-item:hover {
+  cursor: pointer;
+}
